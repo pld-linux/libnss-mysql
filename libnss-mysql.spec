@@ -2,7 +2,7 @@ Summary:	MySQL Name Service Switch Module
 Summary(pl):	Modu³ NSS MySQL
 Name:		libnss-mysql
 Version:	1.5
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Base
 Source0:	http://dl.sourceforge.net/libnss-mysql/%{name}-%{version}.tar.gz
@@ -54,4 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog DEBUGGING FAQ README NEWS THANKS TODO UPGRADING sample
 %attr(755,root,root) %{_libdir}/*.so*
-%attr(600,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}*.cfg
+%attr(644,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.cfg
+%attr(600,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}-root.cfg

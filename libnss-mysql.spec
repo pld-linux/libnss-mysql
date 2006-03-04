@@ -34,7 +34,8 @@ shadow w bazie MySQL.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	MYSQL_LIB_DIR=%{_libdir}
 %{__make}
 
 %install
@@ -53,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog DEBUGGING FAQ README NEWS THANKS TODO UPGRADING sample
-%attr(755,root,root) %{_libdir}/*.so*
+%attr(755,root,root) %{_libdir}/*.so.*.*
 %attr(644,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.cfg
 %attr(600,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}-root.cfg

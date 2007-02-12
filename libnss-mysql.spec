@@ -1,5 +1,5 @@
 Summary:	MySQL Name Service Switch Module
-Summary(pl):	Modu³ NSS MySQL
+Summary(pl.UTF-8):   ModuÅ‚ NSS MySQL
 Name:		libnss-mysql
 Version:	1.5
 Release:	1
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 libnss-mysql is a NSS library for MySQL. It features full groups,
 passwd and shadow support.
 
-%description -l pl
-libnss-mysql jest bibliotek± NSS dla MySQL. Pozwala ona na
-przechowywanie informacji typowych dla plików groups, passwd oraz
+%description -l pl.UTF-8
+libnss-mysql jest bibliotekÄ… NSS dla MySQL. Pozwala ona na
+przechowywanie informacji typowych dla plikÃ³w groups, passwd oraz
 shadow w bazie MySQL.
 
 %prep

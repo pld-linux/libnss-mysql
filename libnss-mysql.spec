@@ -1,5 +1,5 @@
 Summary:	MySQL Name Service Switch Module
-Summary(pl.UTF-8):   Moduł NSS MySQL
+Summary(pl.UTF-8):	Moduł NSS MySQL
 Name:		libnss-mysql
 Version:	1.5
 Release:	1
